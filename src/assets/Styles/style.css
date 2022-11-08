@@ -1,0 +1,391 @@
+/*****************************************
+***************Navbar
+*******************************************/
+body {
+  background-color: #000 !important;
+}
+
+.navbar {
+  font-family: "Roboto" !important;
+  font-weight: 800;
+  font-size: 1.5rem !important;
+  position: sticky !important;
+  top: 0;
+  z-index: 100;
+  background: rgba(0, 171, 174, 1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem !important;
+  color: #fff !important;
+}
+
+.navbar-brand:hover {
+  color: #000 !important;
+}
+
+.navbar-expand-lg,
+.navbar-nav {
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+.nav-link:hover {
+  color: #000 !important;
+}
+
+/******************************************
+**************About/Particles Animation
+********************************************/
+.main {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  height: 80vh;
+  align-items: center;
+  width: 100%;
+}
+
+.main .particles {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+
+.main .about {
+  margin: 2rem auto;
+  color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 80%;
+}
+
+.about .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 3rem;
+  margin: 2rem 0rem;
+}
+
+.about .container .info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: "Avenir" !important;
+}
+
+.about .container .info .name h2 span {
+  font-weight: 800;
+}
+
+.about .container .info .about-me p {
+  font-size: 2.1rem;
+  font-weight: 900;
+}
+
+.about .container .info .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about .container .info .links a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #00abae;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  font-weight: 600;
+}
+
+.about .profile-picture {
+  display: flex;
+  justify-content: center;
+}
+
+.about .profile-picture img {
+  width: 30rem;
+}
+
+/************************************
+*************Media Screen
+*******************************************/
+
+@media only screen and (max-width: 740px) {
+  .main {
+    min-height: 100vh;
+  }
+
+  .about .container {
+    flex-direction: column-reverse;
+    gap: 0rem;
+    margin: 1rem 0rem;
+  }
+  .about .container .info {
+    gap: 1rem;
+  }
+  .about .container .info .about-me p {
+    font-size: 1.1rem;
+  }
+  .about .container .info .links {
+    gap: 1rem;
+  }
+  .about .profile-picture img {
+    width: 15rem;
+  }
+}
+
+/***********************************************
+*******************Services
+****************************************************/
+
+.skills .heading {
+  margin: 2rem 0rem;
+  color: #fff;
+}
+
+.skills .skill-heading {
+  color: #00abae;
+  font-weight: 600;
+}
+
+.skills .description {
+  text-align: justify;
+  color: #fff;
+}
+
+/********************************************
+**********Media Screen
+*********************************************/
+@media only screen and (max-width: 740px) {
+  .skills .row {
+    flex-direction: column;
+  }
+}
+
+/***********************************************
+*******************Tech Stack
+****************************************************/
+
+.technologies {
+  margin-top: 2rem;
+  color: #fff;
+}
+
+.technologies .heading {
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.technologies img {
+  width: 10rem;
+}
+
+.technologies .skills-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  width: 90%;
+  margin: 2rem auto;
+  border: 0;
+  padding: 2rem 0rem;
+  gap: 2rem;
+  background: #000;
+}
+
+.technologies .skills-card .logos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px 30px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 50%);
+  background: rgba(0, 150, 170, 0.6);
+  transition: 0.2s;
+}
+
+/**********************************************
+***************Media Screen
+**************************************************/
+
+@media only screen and (max-width: 740px) {
+  .technologies .skills-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/**********************************************
+***************Project Card
+**************************************************/
+
+.projects {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.projects .heading {
+  color: #fff;
+}
+
+.projects .project-card {
+  background-color: #000;
+  color: #fff;
+  margin: 2rem 0rem;
+}
+
+.projects .project-card .project {
+  display: flex;
+  padding: 1rem 1rem;
+  background-color: rgba(0, 171, 174, 0.5);
+  border: 1rem solid #000;
+}
+
+.projects .project-card .project .video {
+  flex-basis: 50%;
+  height: 21.5rem;
+  width: 50rem;
+  background-color: #000;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.projects .project-card .project .card-body {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projects .project-card .project .card-body .card-subtitle {
+  color: #000 !important;
+}
+
+.projects .project-card .project .card-body .links .card-link {
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}
+
+/**********************************************
+***************Media Screen
+**************************************************/
+
+@media only screen and (max-width: 740px) {
+  .projects .project-card .project {
+    flex-direction: column;
+  }
+  .projects .project-card .project .video {
+    width: 17rem;
+  }
+}
+
+/*****************************************************
+***************Contact
+*******************************************************/
+.heading {
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+form {
+  background-color: rgba(0, 171, 174, 0.5);
+  color: #fff;
+  gap: 1rem;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form .form-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-content: center;
+}
+
+form .form-body input {
+  border: 1px solid blue;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 50%);
+  width: 80%;
+  padding: 1rem 2rem;
+}
+
+form .form-body textarea {
+  border: 1px solid blue;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 50%);
+  width: 80%;
+  padding: 1rem 2rem;
+}
+
+form button {
+  border: 0;
+  background-color: #00abae;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 50%);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.thankyou-msg {
+  background-color: rgba(0, 171, 174, 0.5);
+  color: #fff;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+/**********************************************
+************Media Screen
+***********************************************/
+@media only screen and (max-width: 740px) {
+  form .form-body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/**********************************************
+************Footer
+***********************************************/
+
+.footer {
+  background-color: rgba(0, 171, 174, 0.5);
+  color: #fff;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer .logo {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.footer img {
+  width: 4rem;
+}
